@@ -1,0 +1,32 @@
+$base_pixel_size: 16;
+
+@function parseInt($n) {
+  @return $n / ( $n * 0 + 1 );
+}
+
+@function px2rem($px_value) {
+  $unit: unit($px_value);
+  $value: parseInt($px_value);
+  @if ('px' == $unit) {
+    @return ( $value / $base_pixel_size ) + rem;
+  } @else {
+    @return $px_value;
+  }
+}
+
+// Assumes px value, with no unit
+@function getRem( $value ) {
+  @return ( $value / $base_pixel_size ) + rem;
+}
+
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}

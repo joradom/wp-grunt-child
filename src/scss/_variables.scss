@@ -1,0 +1,33 @@
+// Colors
+$black: #000;
+$pseudo-black: #333;
+$dark-grey: #444;
+$grey: #888;
+$light-grey: #ccc;
+$white: #fff;
+
+// Transparent Colors
+
+// Color Aliases
+$font-color: $pseudo-black;
+$heading-color: $pseudo-black;
+
+$link-color: $grey;
+$link-hover-color: $dark-grey;
+
+// Fonts
+$open-sans: 'Open Sans', sans-serif;
+$lato: 'Lato', sans-serif;
+
+$body-font-stack: $open-sans;
+$heading-font-stack: $lato;
+
+// Images
+
+// Helper class variables
+$helper-font-color: 'white', 'light-grey'; // The color and colors arrays must match! Color holds the name, colors holds the value.
+$helper-font-colors: $white, $light-grey; // The color and colors arrays must match! Color holds the name, colors holds the value.
+$helper-font-size: 12, 14, 16, 18;
+$helper-font-weight: 300, 400, 600, 700;
+$helper-margin-values: 0, 10, 20, 30, 40, 50;
+$helper-padding-values: 0, 10, 20, 30, 40, 50;

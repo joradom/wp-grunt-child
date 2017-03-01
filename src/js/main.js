@@ -1,0 +1,5 @@
+(function ($) {
+
+    $('.matchHeightJS').matchHeight();
+
+})(jQuery);

@@ -1,0 +1,26 @@
+{
+  "name": "wp-grunt-child",
+  "description": "Part of a child theme template with Grunt for compiling SCSS and JS.",
+  "version": "1.0.0",
+  "license": "GPL-3.0+",
+  "contributors": [
+    {
+      "name": "Sideways8 Interactive, LLC",
+      "url": "http://sideways8.com/"
+    },
+    {
+      "name": "Garrett Rappaport",
+      "url": "https://syntacticnacl.com"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-config": "^0.19.2"
+  }
+}

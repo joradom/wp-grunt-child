@@ -1,0 +1,35 @@
+$positions: top, bottom, left, right;
+
+$i: 1;
+@each $value in $helper-font-color {
+  .font-color-#{$value} { color: nth($helper-font-colors, $i); }
+  $i: $i + 1;
+}
+
+@each $value in $helper-font-size {
+  .font-size-#{$value} { font-size: getRem( $value ); }
+}
+
+@each $value in $helper-font-weight {
+  .font-weight-#{$value} { font-weight: $value; }
+}
+
+@each $value in $helper-margin-values {
+  .margin-#{$value} { margin: getRem( $value ); }
+}
+
+@each $value in $helper-margin-values {
+  @each $position in $positions {
+    .margin-#{$position}-#{$value} { margin-#{$position}: getRem( $value ); }
+  }
+}
+
+@each $value in $helper-padding-values {
+  .padding-#{$value} { padding: getRem( $value ); }
+}
+
+@each $value in $helper-padding-values {
+  @each $position in $positions {
+    .padding-#{$position}-#{$value} { padding-#{$position}: getRem( $value ); }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "wp-grunt-child",
+  "version": "1.0.0",
+  "authors": [
+    "Sideways8 Interactive, LLC"
+  ],
+  "description": "Part of a child theme template with Grunt for compiling SCSS and JS.",
+  "moduleType": [
+    "node"
+  ],
+  "license": "GPL-3.0+",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
+    "fitvids": "^1.2.0",
+    "matchHeight": "^0.7.2",
+    "modernizer": "^2.8.2"
+  }
+}

@@ -1,0 +1,22 @@
+default:
+  - build
+  - watch
+build:
+  - 'build:vendor-css'
+  - 'build:css'
+  - 'build:vendor-js'
+  - 'build:js'
+  - 'build:font'
+'build:vendor-css':
+  - 'concat:vendor-css'
+  - 'copy:cssSourceMap'
+'build:css':
+  - 'sass:theme'
+  - 'cssmin:theme'
+'build:font':
+  - 'copy:fonts'
+'build:vendor-js':
+  - 'concat:vendor-js'
+'build:js':
+  - 'concat:js'
+  - 'uglify:theme'

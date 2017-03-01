@@ -1,0 +1,8 @@
+// To add a clearfix via a SCSS file, use `@extend .clearfix`
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
