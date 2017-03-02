@@ -20,7 +20,10 @@ function wp_grunt_child_theme_enqueue() {
 		$is_min = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
 		// Enqueue all styles
-		wp_enqueue_style( 's8theme-google-fonts', $google_fonts_url );
+		if ( ! empty( $google_fonts_url ) ) {
+			wp_enqueue_style( $child_style . '-google-fonts', $google_fonts_url );
+		}
+
 		wp_enqueue_style( $child_style . '-css-vendor',
 			get_stylesheet_directory_uri() . "/assets/css/vendor{$is_min}.css",
 			array( $parent_style ), wp_get_theme()->get( 'Version' ) );
